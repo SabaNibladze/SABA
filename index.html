@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ცხრილების აგება HTML</title>
+</head>
+<body>
+    <h1>ცხრილის ძირითადი ტეგები და პარამეტრები HTML</h1>
+    <h3>ცხრილის ჩარჩოს გარეშე</h3>
+    <table>
+        <tr>
+            <th>სახელი</th>
+            <th>გვარი</th>
+            <th>წლოვანება</th>
+            <th>დაბადების ადგილი</th>
+        </tr>
+        <tr>
+            <td>ლუკა</td>
+            <td>ავალიანი</td>
+            <td>5</td>
+            <td>თელავი</td>
+        </tr>
+        <tr>
+            <td>მარიამ</td>
+            <td>ხიდეშელი</td>
+            <td>6</td>
+            <td>ზუგდიდი</td>
+        </tr>
+        <tr>
+            <td>თაკო</td>
+            <td>ზვიადაური</td>
+            <td>6</td>
+            <td>ქუთაისი</td>
+        </tr>
+    </table>
+
+<h3>ცხრილისთვის ჩარჩოს დამატება Border - ატრიბუტი</h3>
+<table border="5px">
+    <tr>
+        <th>სახელი</th>
+        <th>გვარი</th>
+        <th>წლოვანება</th>
+        <th>დაბადების ადგილი</th>
+    </tr>
+    <tr>
+        <td>ლუკა</td>
+        <td>ავალიანი</td>
+        <td>5</td>
+        <td>თელავი</td>
+    </tr>
+    <tr>
+        <td>მარიამ</td>
+        <td>ხიდეშელი</td>
+        <td>6</td>
+        <td>ზუგდიდი</td>
+    </tr>
+    <tr>
+        <td>თაკო</td>
+        <td>ზვიადაური</td>
+        <td>6</td>
+        <td>ქუთაისი</td>
+    </tr>
+</table>
+
+<h3>ცხრილისთვის სიგრძისა და სიმაღლის განსაზღვრა width,height - ატრიბუტები</h3>
+<table width="50%" height="200" border="1px">
+<tr>
+    <th>სახელი</th>
+    <th>გვარი</th>
+    <th>წლოვანება</th>
+    <th>დაბადების ადგილი</th>
+</tr>
+<tr>
+    <td>ლუკა</td>
+    <td>ავალიანი</td>
+    <td>5</td>
+    <td>თელავი</td>
+</tr>
+<tr>
+    <td>მარიამ</td>
+    <td>ხიდეშელი</td>
+    <td>6</td>
+    <td>ზუგდიდი</td>
+</tr>
+<tr>
+    <td>თაკო</td>
+    <td>ზვიადაური</td>
+    <td>6</td>
+    <td>ქუთაისი</td>
+</tr>
+</table>
+<h2>ცხრილის სვეტის უჯრედების გაერთიანება colspan ატრიბუტი</h2>
+<table width="50%" border="1px">
+    <tr>
+        <th>სახელი</th>
+        <th colspan="3">ტელეფონი</th>
+        <th>ქვეყანა</th>
+        <th>სამუშაო ადგილი</th>
+    </tr>
+    <tr>
+        <td>ბილ გეითსი</td>
+        <td>555778532</td>
+        <td>555788633</td>
+        <td>555798734</td>
+        <td>ამერიკა</td>
+        <td>Microsoft</td>
+    </tr>
+    <tr>
+        <td>ტიმ ბერნერს ლი</td>
+        <td>551724567</td>
+        <td>555588793</td>
+        <td>598732714</td>
+        <td>შვეიცარია</td>
+        <td>W3C</td>
+    </tr>
+</table>
+<h3>ცხრილის ორი სტრიქონის უჯრების <br> გაერთიანება: rowspan - ატრიბუტი </h3>
+<table width="50%" border="1px">
+    <tr>
+        <th>სახელი</th>
+        <td>ბილ გეითსი</td>
+    </tr>
+    <tr>
+        <th rowspan="2">ტელეფონი</th>
+        <td>555778532</td>
+    </tr>
+    <tr>
+        <td>555788633</td>
+    </tr>
+    <tr>
+        <th>ახალი სტრიქონი: ქვეყანა</th>
+        <td>ახალი სტრიქონის შიგთავსი - ამერიკა</td>
+    </tr>
+</table>
+<h2>ცხრილისთვის მინაწერის გაკეთება caption - ტეგი</h2>
+<table width="50%" border="1px">
+    <caption><b>თვიური დანაზოგი</b></caption>
+    <tr>
+        <th>თვე</th>
+        <th>დანაზოგი</th>
+    </tr>
+    <tr>
+        <td>იანვარი</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>თებერვალი</td>
+        <td>$50</td>
+    </tr>
+</table>
+
+<h3>ტექსტის მდებარეობის განსაზღვრა უჯრებში:
+    <br> left, right, center ატრიბუტები </h3>
+    <table width="50%" border="1px">
+        <caption><b>თვიური დანაზოგი</b></caption>
+        <tr>
+            <th>თვე</th>
+            <th>დანაზოგი</th>
+        </tr>
+        <tr>
+            <td align="left">იანვარი</td>
+            <td align="center">$100</td>
+        </tr>
+        <tr>
+            <td align="right">თებერვალი</td>
+            <td align="center">$50</td>
+        </tr>
+    </table>
+    <h3>ტექსტის მდებარეობის განსაზღვრა უჯრებში <br> 
+    ჰორიზონტალური მდებარეობის მიხედვით:
+<br> top, middle, bottom ატრიბუტები</h3>
+<table width="50%" height="200" border="1px">
+    <caption><b>თვიური დანაზოგი</b></caption>
+    <tr>
+        <th>თვე</th>
+        <th>დანაზოგი</th>
+    </tr>
+    <tr>
+        <td valign="middle">იანვარი</td>
+        <td valign="bottom">$100</td>
+    </tr>
+    <tr>
+        <td valign="middle">თებერვალი</td>
+        <td valign="top">$50</td>
+    </tr>
+</table>
+<h3>ტექსტის მდებარეობის განსაზღვრა სათაურის უჯრებში <br> 
+    ვერტიკალური მდებარეობის <br>
+    მიხედვით valign ატრიბუი</h3>
+    <table width="50%" height="200" border="1px">
+        <caption><b>თვიური დანაზოგი</b></caption>
+        <tr>
+            <th>თვე</th>
+            <th>დანაზოგი</th>
+        </tr>
+        <tr>
+            <td valign="top">იანვარი</td>
+            <td valign="middle">$100</td>
+            <td valign="bottom">დანახარჯი</td>
+        </tr>
+        <tr>
+            <td valign="top">თებერვალი</td>
+            <td valign="middle">$50</td>
+            <td valign="bottom">$20</td>
+        </tr>
+    </table>
+
+    <h3>ცხრილის ფონის ფერის შეცვლა: bgcolor - ატრიბუტი</h3>
+    <table width="50%" border="1px" bgcolor="magenta">
+        <tr>
+            <th>სახელი</th>
+            <th>გვარი</th>
+            <th>წლოვანება</th>
+        </tr>
+        <tr>
+            <td>ლუკა</td>
+            <td>ავალიანი</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>მარიამ</td>
+            <td>ხიდეშელი</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>თაკო</td>
+            <td>ზვიადაური</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <h3>ცხრილის ფონის ფერის შეცვლა: bgcolor - ატრიბუტი</h3>
+    <table width="50%" border="1px">
+        <tr bgcolor="magenta">
+            <th>სახელი</th>
+            <th>გვარი</th>
+            <th>წლოვანება</th>
+        </tr>
+        <tr bgcolor="grey">
+            <td>ლუკა</td>
+            <td>ავალიანი</td>
+            <td>5</td>
+        </tr>
+        <tr bgcolor="green">
+            <td>მარიამ</td>
+            <td>ხიდეშელი</td>
+            <td>6</td>
+        </tr>
+        <tr bgcolor="red">
+            <td>თაკო</td>
+            <td>ზვიადაური</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <h3>ცხრილის ფონის ფერის შეცვლა: bgcolor - ატრიბუტი</h3>
+    <table width="50%" border="1px">
+        <tr>
+            <th bgcolor="magneta">სახელი</th>
+            <th bgcolor="red">გვარი</th>
+            <th bgcolor="yellow">წლოვანება</th>
+        </tr>
+        <tr>
+            <td>ლუკა</td>
+            <td>ავალიანი</td>
+            <td bgcolor="grey">5</td>
+        </tr>
+        <tr>
+            <td>მარიამ</td>
+            <td bgcolor="green">ხიდეშელი</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>თაკო</td>
+            <td>ზვიადაური</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <h3>ცხრილის უჯრების შორის დაშორება: <br>
+    cellspacing - ატრიბუტი</h3>
+    <table width="50%" border="1px" cellspacing="10">
+        <tr>
+            <th bgcolor="magneta">სახელი</th>
+            <th bgcolor="red">გვარი</th>
+            <th bgcolor="yellow">წლოვანება</th>
+        </tr>
+        <tr>
+            <td>ლუკა</td>
+            <td>ავალიანი</td>
+            <td bgcolor="grey">5</td>
+        </tr>
+        <tr>
+            <td>მარიამ</td>
+            <td bgcolor="green">ხიდეშელი</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>თაკო</td>
+            <td>ზვიადაური</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    
+    <h3>ცხრილის უჯრების შორის დაშორება: <br>
+        cellpadding - ატრიბუტი</h3>
+        <table width="50%" border="1px" cellpadding="10">
+            <tr>
+                <th bgcolor="magneta">სახელი</th>
+                <th bgcolor="red">გვარი</th>
+                <th bgcolor="yellow">წლოვანება</th>
+            </tr>
+            <tr>
+                <td>ლუკა</td>
+                <td>ავალიანი</td>
+                <td bgcolor="grey">5</td>
+            </tr>
+            <tr>
+                <td>მარიამ</td>
+                <td bgcolor="green">ხიდეშელი</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>თაკო</td>
+                <td>ზვიადაური</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <h3>ცხრილში ცარიელი უჯრების ასახვა: &nbsp;</h3>
+            <table width="50%" border="1px" cellpadding="10">
+                <tr>
+                    <th bgcolor="magneta">სახელი</th>
+                    <th bgcolor="red">გვარი</th>
+                    <th bgcolor="yellow">წლოვანება</th>
+                    <th bgcolor="yellow">ცარიელი უჯრა</th>
+                </tr>
+                <tr>
+                    <td>ლუკა</td>
+                    <td>ავალიანი</td>
+                    <td bgcolor="grey">5</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>მარიამ</td>
+                    <td bgcolor="green">ხიდეშელი</td>
+                    <td>6</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>თაკო</td>
+                    <td>ზვიადაური</td>
+                    <td>6</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+            <h3>ცხრილის უჯრებში გრაფიკული გამოსახულების ჩასმა: img ტეგი &nbsp;</h3>
+            <table width="50%" border="1px" cellpadding="10">
+                <tr>
+                    <th bgcolor="magneta">სახელი</th>
+                    <th bgcolor="red">გვარი</th>
+                    <th bgcolor="yellow">წლოვანება</th>
+                </tr>
+                <tr>
+                    <td> <img src="boy.png" width="100px">ლუკა</td>
+                    <td>ავალიანი</td>
+                    <td bgcolor="grey">5</td>
+                   
+                </tr>
+                <tr>
+                    <td><img src="./girl.jpg" width="50px">მარიამ</td>
+                    <td bgcolor="green">ხიდეშელი</td>
+                    <td>6</td>
+                
+                </tr>
+                <tr>
+                    <td><img src="./girl2.jpg" width="50px">თაკო</td>
+                    <td>ზვიადაური</td>
+                    <td>6</td>
+                
+                </tr>
+            </table>
+
+</body>
+</html>
